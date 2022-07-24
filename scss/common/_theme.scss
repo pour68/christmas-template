@@ -1,0 +1,34 @@
+body.dark-theme {
+    --title-color: hsl(355, 4%, 95%);
+    --text-color: hsl(355, 4%, 75%);
+    --body-color: hsl(355, 20%, 12%);
+    --container-color: hsl(355, 16%, 16%);
+}
+
+.dark-theme {
+
+    & .scroll-header,
+    & .nav__menu {
+        box-shadow: 0 2px 4px hsla(0, 0%, 4%, .3);
+    }
+
+    & .message__container {
+        background-color: var(--container-color);
+    }
+
+    & .message__input {
+        background-color: var(--body-color);
+    }
+
+    & .message__button {
+        background-color: var(--first-color);
+    }
+
+    & .message__button:hover {
+        background-color: var(--first-color-alt);
+    }
+
+    &::-webkit-scrollbar {
+        background: hsl(355, 8%, 30%);
+    }
+}

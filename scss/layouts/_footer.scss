@@ -1,0 +1,78 @@
+.footer {
+    overflow: hidden;
+
+    &__container {
+        position: relative;
+        row-gap: 2rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        column-gap: 0.25rem;
+        color: var(--title-color);
+        font-weight: var(--fw-medium);
+    }
+
+    &__logo-img {
+        width: 1.5rem;
+    }
+
+    &__description {
+        font-size: var(--fs-sm);
+    }
+
+    &__logo,
+    &__title {
+        margin-bottom: var(--space-2);
+    }
+
+    &__title {
+        font-size: var(--fs-lg);
+    }
+
+    &__links,
+    &__availables {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.75rem;
+    }
+
+    &__link {
+        color: var(--text-color);
+        transition: 0.3s;
+    }
+
+    &__link:hover {
+        color: var(--title-color);
+    }
+
+    &__available-img {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    &__copy {
+        display: block;
+        margin: 3.5rem 0 1rem 0;
+        text-align: center;
+        font-size: var(--fs-xs);
+        color: var(--text-color-light);
+    }
+
+    &__img1,
+    &__img2 {
+        position: absolute;
+        width: 100px;
+    }
+
+    &__img1 {
+        top: 25%;
+        right: 2rem;
+    }
+
+    &__img2 {
+        top: 75%;
+        right: -4rem;
+    }
+}

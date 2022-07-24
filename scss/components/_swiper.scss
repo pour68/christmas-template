@@ -1,0 +1,24 @@
+.swiper-pagination-bullet {
+    background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+@media (max-width: 993px) {
+    .swiper {
+        overflow: visible;
+    }
+
+    .swiper {
+        overflow-y: visible !important;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -20px;
+    }
+}

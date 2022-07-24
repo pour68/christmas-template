@@ -1,0 +1,23 @@
+.container {
+    max-width: 968px;
+    margin-left: var(--space-3);
+    margin-right: var(--space-3);
+}
+
+.d-grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+}
+
+.section__title {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-5);
+    text-align: center;
+}

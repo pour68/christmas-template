@@ -1,0 +1,22 @@
+.celebrate {
+    &__container {
+        row-gap: 1rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: var(--space-3);
+    }
+
+    &__description {
+        margin-bottom: var(--space-5);
+    }
+
+    &__img {
+        width: 280px;
+        justify-self: center;
+    }
+}

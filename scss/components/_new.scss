@@ -1,0 +1,56 @@
+.new {
+    &__card {
+        position: relative;
+        width: 230px;
+        background-color: var(--container-color);
+        box-shadow: 0 4px 16px hsla(355, 25%, 15%, 0.1);
+        padding: 1rem 1rem 1.5rem;
+        border-radius: 0.75rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        width: 250px;
+        height: 250px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+        position: absolute;
+        top: -5rem;
+        left: -0.65rem;
+        z-index: 0;
+    }
+
+    &__img {
+        position: relative;
+        width: 150px;
+        margin-bottom: var(--space-4);
+        transition: 0.3s;
+    }
+
+    &__price {
+        font-size: var(--fs-xl);
+    }
+
+    &__title {
+        font-weight: var(--fw-medium);
+    }
+
+    &__button {
+        display: flex;
+        padding: 0.5rem;
+        border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+    }
+
+    &__card:hover &__img {
+        transform: translateY(-0.5rem);
+    }
+}

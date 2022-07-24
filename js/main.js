@@ -33,18 +33,23 @@ window.addEventListener("scroll", scrollHeader);
 
 let newSwiper = new Swiper(".new-swiper", {
   spaceBetween: 24,
-  loop: "true",
+  loop: true,
   slidesPerView: "auto",
   centeredSlides: true,
+  grabCursor: true,
 
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
   breakpoints: {
-    768: {
-      spaceBetween: 80,
+    350: {
+      spaceBetween: 15,
       slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 40,
+      slidesPerView: 3,
     },
   },
 });
